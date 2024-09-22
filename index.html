@@ -1,17 +1,44 @@
-<!DOCTYPE html>  <!-- 문서가 HTML5(HTML의 최신 버전)임을 선언 -->
-<html lang="ko"> <!-- 언어를 한국어로 설정 -> 검색 엔진이 한국어 페이지로 인식 -->
-<head><!--HTML의 기본 구조(구조 설명 개념)-->
-    <meta charset="UTF-8"> <!-- 문서의 문자 인코딩을 UTF-8(가장 널리 사용되는 문자 인코딩 방식 이라고 하는데 잘 모르곘음;;)로 설정 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 모바일 장치에서의 화면 크기 및 스케일링 설정 -->
-    <title>자기소개/숙제</title> <!-- 브라우저 탭에 표시될 제목 설정 -->
-    <link rel="stylesheet" href="styles.css"> <!-- 외부 CSS 파일 연결 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개/숙제</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <a href="pr/index.html">pr</a>
-    <a href="account/loginPage.html">memo</a>
-    <a href="calc/calc.html">calc</a>
-    <a href="color%20page/color.html">color</a>
-    <a href="todo/index.html">calc</a>
-
+    <div class="container">
+        <h1>박시온의 홈페이지</h1>
+        <div class="card-list">
+            <div class="card">
+                <img src="images/pr-thumbnail.png" alt="pr 썸네일">
+                <div class="card-content">
+                    <h2><a href="pr/index.html">PR 페이지</a></h2>
+                    <p>나를 소개하는 PR 페이지입니다.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/memo-thumbnail.png" alt="memo 썸네일">
+                <div class="card-content">
+                    <h2><a href="account/loginPage.html">메모 페이지</a></h2>
+                    <p>계정별로 간단한 글을 남길 수 있는 메모장입니다.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/calc-thumbnail.png" alt="calc 썸네일">
+                <div class="card-content">
+                    <h2><a href="calc/calc.html">계산기 페이지</a></h2>
+                    <p>덧셈, 뻴셈을 할 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/color-thumbnail.png" alt="color 썸네일">
+                <div class="card-content">
+                    <h2><a href="color%20page/color.html">색상 선택 페이지</a></h2>
+                    <p>다양한 색상이 알록달록하게 반짝입니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
