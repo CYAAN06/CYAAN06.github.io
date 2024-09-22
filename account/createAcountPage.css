@@ -1,0 +1,66 @@
+/* 페이지 기본 스타일 */
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+/* 로그인 박스 스타일 */
+.createAcount-box{
+    width: 300px;
+    padding: 40px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 입력 그룹 스타일 */
+.input-group{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* 레이블과 입력 필드 스타일 */
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/*비밀번호 틀림 메세지 스타일*/
+.wrongPW{
+    color: #ff5252;
+}
+
+/* 제출 버튼 스타일 */
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+/* 버튼 호버 효과 */
+button:hover {
+    background-color: #4cae4c;
+}

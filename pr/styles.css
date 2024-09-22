@@ -1,0 +1,56 @@
+html {
+    height: 100%; /* Ensure the HTML element takes up full height */
+}
+
+body {
+    display: flex; /* Use flexbox to control layout */
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: space-between; /* Distribute space between elements */
+    min-height: 100vh; /* Ensure body takes up full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Background color */
+    font-family: Arial, sans-serif; /* Font family */
+    line-height: 1.6; /* Line height for text */
+    color: #333; /* Text color */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+details, section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+summary {
+    list-style: none;
+}
+
+.alert {
+    background-color: red;
+}
+
+#about p {
+    line-height: 1.5;
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}

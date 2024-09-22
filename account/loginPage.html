@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="loginPage.css" />
+        <title>Login Page</title>
+    </head>
+
+    <body>
+        <div class="login-box">
+            <!--로그인 폼-->
+            <form id="loginform">
+                <h2>Login</h2>
+
+                <!--사용자 ID 입력-->
+                <div class="input-group">
+                    <label for="userID">ID:</label>
+                    <input type="text" id="userID" required>
+                </div>
+
+                <!--사용자 비밀번호 입력-->
+                <div class="input-group">
+                    <label for="userPW">PW:</label>
+                    <input type="password" id="userPW" required>
+                </div>
+
+                <!--제출 버튼-->
+                <button type="submit">Login</button>
+
+                <!--계정 생성 버튼-->
+                <a href="createAcountPage.html" class="createAcount">Create Acount</a>
+            </form>
+        </div>
+        
+        <script src="loginPage.js"></script>
+    </body>
+</html>

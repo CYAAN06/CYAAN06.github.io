@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="createAcountPage.css" />
+        <title>Create Acount Page</title>
+    </head>
+
+    <body>
+        <div class="createAcount-box">
+            <!--계정 생성 폼-->
+            <form id="createAcountform">
+                <h2>Create Acount</h2>
+
+                <!--아이디 생성 그룹-->
+                <div class="input-group id-group">
+                    <label for="userID">ID:</label>
+                    <input type="text" id="userID" required>
+                </div>
+                
+                <!--비밀번호 생성-->
+                <div class="input-group">
+                    <label for="userPW">PW:</label>
+                    <input type="password" id="userPW" required>
+                </div>
+
+                <!--비밀번호 확인-->
+                <div class="input-group">
+                    <label for="userPWconfirm">CONFIRM:</label>
+                    <input type="password" id="userPWconfirm" required>
+                </div>
+
+                <p hidden class="wrongPW">비밀번호가 다릅니다!!</p>
+
+                <!--계정 생성 버튼-->
+                <button type="submit" id="createButton">Create</button>
+            </form>
+        </div>
+
+        <script src="createAcountPage.js"></script>
+    </body>
+</html>
