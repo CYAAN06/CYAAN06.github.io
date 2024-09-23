@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="todoList.css" />
+        <title>To Do List Page</title>
+    </head>
+
+    <body>
+        <h2>To-Do List</h2>
+
+        <table id="todoTable">
+            <tr>
+                <th>List</th>
+                <th>Action</th>
+            </tr>
+        </table>
+
+        <div class="addList-group">
+            <input type="text" id="addList" placeholder="Enter new to-do">
+            <button id="addListButton">Add To-Do</button>
+        </div>
+
+         <div class="searchBar-wrapper">
+            <input type="search" id="todoListSearch" placeholder="Search tasks...">
+        </div>
+
+        <div class="button-group">
+            <button id="saveButton">Save</button>
+            <button id="loadButton">Load</button>
+        </div>
+
+        <!-- Script 연결 -->
+        <script src="todoList.js"></script>
+    </body>
+</html>
