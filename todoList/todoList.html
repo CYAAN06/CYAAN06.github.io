@@ -11,19 +11,27 @@
         <h2>To-Do List</h2>
 
         <table id="todoTable">
-            <tr>
-                <th>List</th>
-                <th>Action</th>
-            </tr>
+            <thead>
+                <tr>
+                    <th>List</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
         </table>
 
-        <div class="addList-group">
+        <form class="addList-group">
             <input type="text" id="addList" placeholder="Enter new to-do">
-            <button id="addListButton">Add To-Do</button>
-        </div>
+            <button type="submit" id="addListButton">Add To-Do</button>
+        </form>
 
-         <div class="searchBar-wrapper">
+        <div class="searchBar-wrapper">
             <input type="search" id="todoListSearch" placeholder="Search tasks...">
+            <select id="sortOptions" name="sortOptions">
+                <option value="dateAdded">Date Added</option>
+                <option value="alphabeticalOrder">ABC</option>
+            </select>
         </div>
 
         <div class="button-group">
