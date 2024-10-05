@@ -19,7 +19,7 @@ function display(data) {
 }
 
 userLocation = navigator.geolocation.getCurrentPosition((position) => {
-    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=f18f04af48681090c5ab6858348b7dd2`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=0826ed0f3ad3a3519f49d47e7b688b5d`;
 
     fetch(url)  
         .then(response => response.json())
