@@ -3,33 +3,54 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="weather.css" />
+        <link rel="stylesheet" href="../index.css" />
         <title>Weather</title>
     </head>
 
-    <body>
-        <h2>Weather Table</h2>
-        <table>
-            <thead>
-                <tr>
-                    <td>Temperature</td>
-                    <td>Humidity</td>
-                    <td>Clouds</td>
-                    <td>Rain</td>
-                </tr>
-            </thead>
-            <tr>
-                <td id="temp">Temp</td>
-                <td id="humidity">Humidity</td>
-                <td id="clouds">Clouds</td>
-                <td id="rain">Rain</td>
-            </tr>
-            <img
-                id="weatherIcon"
-            />
-            <tbody>
-            </tbody>
-        </table>
+    <body class="weatherPage">
+        <h1 class="top">SION'S BLOG</h1>
+
+        <div class="container">
+            <div class="side-bar">
+                <a href="../index.html">메인 페이지</a>
+                <a href="../pr/prPage.html">PR 페이지</a>
+                <a href="../memo/loginPage.html">메모 페이지</a>
+                <a href="../calc/calc.html">계산기 페이지</a>
+                <a href="../color/color.html">색상 선택 페이지</a>
+                <a href="../todoList/todoList.html">할일 편집 페이지</a>
+                <a href="../weather/weather.html">날씨 정보 페이지</a>
+            </div>
+
+            <div class="content">
+                <h2>Weather Table</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Temperature</td>
+                            <td>Humidity</td>
+                            <td>Clouds</td>
+                            <td>Rain</td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td id="temp">Temp</td>
+                        <td id="humidity">Humidity</td>
+                        <td id="clouds">Clouds</td>
+                        <td id="rain">Rain</td>
+                    </tr>
+                    <img
+                        id="weatherIcon"
+                    />
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 SION All rignts reserved</p>
+        </footer>
+
         <script src="weather.js"></script>
     </body>
 </html>

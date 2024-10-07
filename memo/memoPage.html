@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Click with Class</title>
-    <link rel="stylesheet" href="../index.css" />
+    <title>Memo Page</title>
+    <link rel="stylesheet" href="../index.css">
 </head>
-<body>
+<body class="memoPage">
     <h1 class="top">SION'S BLOG</h1>
 
-    <div class="container">
+     <div class="container">
         <div class="side-bar">
             <a href="../index.html">메인 페이지</a>
             <a href="../pr/prPage.html">PR 페이지</a>
@@ -20,17 +20,21 @@
             <a href="../weather/weather.html">날씨 정보 페이지</a>
         </div>
 
-        <div class="content">
-            <div class="valueWrapper">
 
+        <div class="content">
+            <div class="memo-box">
+                <h2>Your Memo</h2>
+                <textarea id="memoInput" rows="10" cols="30"></textarea>
+                <br>
+                <button id="saveMemo">Save Memo</button>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 SION All rignts reserved</p>
+            <p>&copy; 2024 SION All rignts reserved</p>
     </footer>
 
-    <script src="calc.js"></script>
+    <script src="memoPage.js"></script>
 </body>
 </html>

@@ -1,24 +1,3 @@
-"use strict";
-
-/*
-document.body.style.background = 'red'; // 배경을 붉은색으로 변경하기
-
-setTimeout(() => document.body.style.background = '', 3000); // 원상태로 복구하기
-*/
-
-/*
-const asd = document.createElement("div");
-
-asd.className = "alert";
-asd.innerHTML = "<strong>Hello</strong>, world!";
-
-const sdf = document.querySelector("#contact");
-
-sdf.append(asd);
-asd.innerHTML = "asdasdas";
-setTimeout(() => asd.remove(asd), 1000);
-*/
-
 class Clock {
     constructor(template) {
         this.template = template;

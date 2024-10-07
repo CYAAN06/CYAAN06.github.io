@@ -1,4 +1,3 @@
-
 // class 정의
 class Calc{
     constructor(){
@@ -21,6 +20,9 @@ class Calc{
         this.decB = document.createElement('button');
         this.decB.innerHTML = "Decrease Value";
 
+        this.incB.setAttribute("class", "calcButton");
+        this.decB.setAttribute("class", "calcButton");
+
         //이벤트 리스너 추가
         this.incB.addEventListener('click', () => this.increaseButton());
         this.decB.addEventListener('click', () => this.decreaseButton());
@@ -33,9 +35,8 @@ class Calc{
         this.allWrapper.append(this.incB);
         this.allWrapper.append(this.decB);
 
-        //출력값 dom에 추가
-        document.body.append(this.allWrapper);
-
+        const valueWrapper = document.querySelector('.valueWrapper');
+        valueWrapper.append(this.allWrapper);
     }
 
     //값 증가 메서드

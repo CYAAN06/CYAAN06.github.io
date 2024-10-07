@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Click with Class</title>
+    <title>Color Cycle</title>
     <link rel="stylesheet" href="../index.css" />
 </head>
 <body>
     <h1 class="top">SION'S BLOG</h1>
 
-    <div class="container">
+     <div class="container">
         <div class="side-bar">
             <a href="../index.html">메인 페이지</a>
             <a href="../pr/prPage.html">PR 페이지</a>
@@ -21,9 +21,15 @@
         </div>
 
         <div class="content">
-            <div class="valueWrapper">
-
-            </div>
+            <!-- 5개의 색상 선택기 -->
+            <input class="color" type="color" id="color1" value="#ff0000">
+            <input class="color" type="color" id="color2" value="#00ff00">
+            <input class="color" type="color" id="color3" value="#0000ff">
+            <input class="color" type="color" id="color4" value="#ffff00">
+            <input class="color" type="color" id="color5" value="#ff00ff">
+            <!-- 시작 및 정지 버튼 -->
+            <button id="start-button">Start</button>
+            <button id="stop-button">Stop</button>
         </div>
     </div>
 
@@ -31,6 +37,6 @@
         <p>&copy; 2024 SION All rignts reserved</p>
     </footer>
 
-    <script src="calc.js"></script>
+    <script src="color.js"></script>
 </body>
 </html>

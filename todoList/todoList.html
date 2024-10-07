@@ -3,41 +3,61 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="todoList.css" />
+        <link rel="stylesheet" href="../index.css" />
         <title>To Do List Page</title>
     </head>
 
-    <body>
-        <h2>To-Do List</h2>
+    <body class="todoPage">
+        <h1 class="top">SION'S BLOG</h1>
 
-        <table id="todoTable">
-            <thead>
-                <tr>
-                    <th>List</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+        <div class="container">
+            <div class="side-bar">
+                <a href="../index.html">메인 페이지</a>
+                <a href="../pr/prPage.html">PR 페이지</a>
+                <a href="../memo/loginPage.html">메모 페이지</a>
+                <a href="../calc/calc.html">계산기 페이지</a>
+                <a href="../color/color.html">색상 선택 페이지</a>
+                <a href="../todoList/todoList.html">할일 편집 페이지</a>
+                <a href="../weather/weather.html">날씨 정보 페이지</a>
+            </div>
 
-        <form class="addList-group">
-            <input type="text" id="addList" placeholder="Enter new to-do" />
-            <button type="submit" id="addListButton">Add To-Do</button>
-        </form>
+            <div class="content">
+                <h2>To-Do List</h2>
 
-        <div class="searchBar-wrapper">
-            <input type="search" id="todoListSearch" placeholder="Search tasks...">
-            <select id="sortOptions" name="sortOptions">
-                <option value="dateAdded">Date Added</option>
-                <option value="alphabeticalOrder">ABC</option>
-            </select>
+                <table id="todoTable">
+                    <thead>
+                        <tr>
+                            <th>List</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+                <form class="addList-group">
+                    <input type="text" id="addList" placeholder="Enter new to-do" />
+                    <button class="addListButton" type="submit" id="addListButton">Add To-Do</button>
+                </form>
+
+                <div class="searchBar-wrapper">
+                    <input class="todoListSearch" type="search" id="todoListSearch" placeholder="Search tasks...">
+                    <select id="sortOptions" name="sortOptions">
+                        <option value="dateAdded">Date Added</option>
+                        <option value="alphabeticalOrder">ABC</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <button class="saveButton" id="saveButton">Save</button>
+                    <button class="loadButton" id="loadButton">Load</button>
+                </div>
+            </div>
         </div>
 
-        <div class="button-group">
-            <button id="saveButton">Save</button>
-            <button id="loadButton">Load</button>
-        </div>
+        <footer>
+            <p>&copy; 2024 SION All rignts reserved</p>
+        </footer>
 
         <!-- Script 연결 -->
         <script src="todoList.js"></script>
